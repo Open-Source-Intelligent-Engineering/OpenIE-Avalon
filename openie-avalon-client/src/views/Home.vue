@@ -36,7 +36,7 @@
           <p>Welcome to the world of 'Avalon'! You will take on different roles and collaborate with other players to
             advance the storyline. Are you ready to experience the fun of role-playing?</p>
           <div class="card-actions justify-end">
-            <button class="btn btn-primary">start game!</button>
+            <button class="btn btn-primary" v-on:click="this.$router.push({ name: 'StartGame' })">start game!</button>
           </div>
         </div>
       </div>
