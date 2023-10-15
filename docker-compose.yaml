@@ -8,7 +8,7 @@ services:
     build: ./openie-avalon-client
     restart: always
     ports:
-      - "80:4173"
+      - "8081:4173"
     networks:
       - avalon_net
 
