@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import UnsupportDevice from "../views/UnsupportDevice.vue";
 import RulesPage from "../views/RulesPage.vue";
 import SettingsPage from "../views/SettingsPage.vue";
+import StartGame from "../views/StartGame.vue";
 
 
 
@@ -28,6 +29,11 @@ const router = createRouter({
       path: "/settingspage",
       name: "SettingsPage",
       component: SettingsPage,
+    },
+    {
+      path: "/startgame",
+      name: "StartGame",
+      component: StartGame,
     },
   ],
 });
