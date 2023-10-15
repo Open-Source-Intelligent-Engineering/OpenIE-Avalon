@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+
+  # frontend:
+  #   container_name: nashsweeper-frontend-pc
+  #   build: ./nashsweeper-front
+  #   restart: always
+  #   ports: 
+  #     - "8082:4173"
+  #   networks:
+  #     - nashsweeper_net
+
+  # frontend-ipad:
+  #   container_name: nashsweeper-frontend-ipad
+  #   build: ./nashsweeper-front-ipad
+  #   restart: always
+  #   ports: 
+  #     - "8081:4173"
+  #   networks:
+  #     - nashsweeper_net
+
+  frontend:
+    container_name: openie_avalon_client
+    build: ./openie-avalon-client
+    restart: always
+    ports:
+      - "8081:4173"
+    networks:
+      - avalon_net
+
+  # backend:
+  #   container_name: nashsweeper-backend
+  #   build: ./nashsweeper-backend
+  #   restart: always
+  #   ports:
+  #     - "5000:5000"
+  #   networks:
+  #     - nashsweeper_net
+
+networks:
+  avalon_net:
